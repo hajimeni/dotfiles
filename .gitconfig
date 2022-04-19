@@ -1,0 +1,20 @@
+[user]
+	email = nishiyama@bizreach.co.jp
+	name = nishiyama
+	signingkey = 8FDD24271B99B35BDFEF2467F9EAF13D7DE98227
+[ghq]
+	root = /Users/nishiyama/git
+[core]
+	autocrlf = false
+	editor = vim
+[alias]
+        vacuum = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; git fetch --prune; };f"
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[gpg]
+	program = /usr/local/bin/gpg
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
