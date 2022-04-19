@@ -6,7 +6,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "k1low/tap"
 tap "kayac/tap"
-tap "nektos/tap"
 
 brew "act"
 brew "amazon-ecs-cli"

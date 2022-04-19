@@ -24,4 +24,5 @@ jobs:
       - name: Set MacOS.
         run: |
           rm '/usr/local/bin/aws'
+          rm '/usr/local/bin/aws_completer'
           make
